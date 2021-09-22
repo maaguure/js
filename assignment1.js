@@ -33,19 +33,19 @@ let c = "Mohamed";
 
 // Answer Q3:
 
-// function func(x,y){
+function func(x,y){
 
-//    if (typeof(x) && typeof(y) === 'number'){
-//         let z= x + y;
-//         return z;
+    if (typeof(x) && typeof(y) === 'number'){
+         let z= x + y;
+         return z;
       
-//     }else{
-//         return false;
-//     }
+     }else{
+         return false;
+     }
 
-// }
+}
 
-// console.log(func(1,'ali'));
+console.log(func(1,'ali'));
 
 
 /*
@@ -59,13 +59,13 @@ date.
 */
 
 // Answer Q4:
-// let today = new Date().getDay()
+let today = new Date().getDay()
 
-// if (today === 1){
-//     console.log("the day is monday");
-// }else{
-//     console.log("it is not monday")
-// }
+if (today === 1){
+    console.log("the day is monday");
+ }else{
+    console.log("it is not monday")
+ }
 
 /*
     Q5: Using all ‘for loop’ and ‘while loop’ and ‘do while loop’, print from 0 to 10
@@ -74,22 +74,22 @@ date.
 // Answer Q5:
 
 // // for loop
-// for (let i=0; i<11; i++){
-//     console.log(i);
-// }
+for (let i=0; i<11; i++){
+     console.log(i);
+}
 
 // // while 
-// let e =0;
-// while (e <11){
-//     console.log(e);
-//     e++;
-// }
+let e =0;
+while (e <11){
+    console.log(e);
+    e++;
+ }
 // // do .. while
-// let s=0;
-// do {
-//     console.log(s);
-//     s++;
-// }while (s<11);
+let s=0;
+do {
+    console.log(s);
+    s++;
+}while (s<11);
 
 
 /*
@@ -101,13 +101,13 @@ date.
 
 let arr = ["mohamed","ahmed","ali","gure","abdullah"];
 
-// for (let x of arr){
-//     console.log(x);
-// }
+for (let x of arr){
+    console.log(x);
+}
 
-// for (let i in arr){
-//     console.log(arr[i]);
-// }
+for (let i in arr){
+    console.log(arr[i]);
+}
 
 
 /*
@@ -117,16 +117,16 @@ let arr = ["mohamed","ahmed","ali","gure","abdullah"];
 
 // Answer Q7:
 
-// let soop = {
-//     name : "Mohamed",
-//     age : 41,
-//     fculty : "cs",
-//     city: "mogadisho",
-//     year: 2021 
-// }
-//  for (let key in soop){
-//      console.log(`${key}: ${soop[key]}`);
-//  }
+let soop = {
+    name : "Mohamed",
+    age : 41,
+    fculty : "cs",
+    city: "mogadisho",
+    year: 2021 
+}
+ for (let key in soop){
+     console.log(`${key}: ${soop[key]}`);
+ }
 
 
 /*
@@ -138,22 +138,22 @@ let arr = ["mohamed","ahmed","ali","gure","abdullah"];
 
 // Answer Q8:
 
-// let soor = ["amir","mohamed","ahmed","ali","gure"];
-// console.log(soor.length);
-// let soor1 = soor.toString();
-// console.log(soor1);
-// let soor2 = soor.pop();
-// console.log(soor);
-// let soor3 = soor.push("abdulah");
-// console.log(soor);
-// let soor4 = soor.join('/');
-// console.log(soor4);
-// let soor5 = soor.shift();
-// console.log(soor);
-// let soor6 = soor.unshift("omar")
-// console.log(soor);
-// let soor7 = soor.reverse();
-// console.log(soor);
+let soor = ["amir","mohamed","ahmed","ali","gure"];
+console.log(soor.length);
+let soor1 = soor.toString();
+console.log(soor1);
+let soor2 = soor.pop();
+console.log(soor);
+let soor3 = soor.push("abdulah");
+console.log(soor);
+let soor4 = soor.join('/');
+console.log(soor4);
+let soor5 = soor.shift();
+console.log(soor);
+let soor6 = soor.unshift("omar")
+console.log(soor);
+let soor7 = soor.reverse();
+console.log(soor);
 
 /*
     Q9: Create a ‘car’ object with ‘drive’ & ‘stop’ methods
@@ -164,14 +164,14 @@ let arr = ["mohamed","ahmed","ali","gure","abdullah"];
 
 // Answer Q9:
 
-// let car ={
-//     drive: "Driving",
-//     stop : "Stopping"
+let car ={
+    drive: "Driving",
+    stop : "Stopping"
   
-// };
+};
 
-// console.log(car.drive);
-// console.log(car.stop);
+console.log(car.drive);
+console.log(car.stop);
 
 /*
     Q10: Copy the following function
