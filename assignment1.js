@@ -67,6 +67,16 @@ if (today === 1){
     console.log("it is not monday")
  }
 
+// switch
+
+  switch  (today){
+    case 1:
+      console.log( " The day is Monday");
+      break;
+    default:
+        console.log( "it is not Monday");
+  }
+
 /*
     Q5: Using all ‘for loop’ and ‘while loop’ and ‘do while loop’, print from 0 to 10
 */
@@ -164,14 +174,20 @@ console.log(soor);
 
 // Answer Q9:
 
-let car ={
-    drive: "Driving",
-    stop : "Stopping"
+let car = {
+    drive : function(){
+        return "Driving";
+    } ,
+        
+    stop : function(){
+        return "Stopping";
+    }
   
 };
 
-console.log(car.drive);
-console.log(car.stop);
+console.log(car.drive());
+console.log(car.stop());
+
 
 /*
     Q10: Copy the following function
@@ -182,12 +198,16 @@ throw Error('Kaboom')
 */
 
 // Answer Q10:
-try{
-    throwError();
-}
-catch {
+try {
+   throwError()
+  }
+  catch(err) {
     function throwError(){
         throw Error('Kaboom')
-    }
+}
+  }
+  finally {
+    console.log("HI")
+  }
 }
 
