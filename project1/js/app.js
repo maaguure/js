@@ -5,7 +5,7 @@
 
  let selection = document.getElementById('choose-lang');
  let somLang = ["geel","caano","dab","guri","cunto"];
- let engLang = ["camel","milk","fire","house","food"]
+ let engLang = ["camel","milk","fire","house","food"];
  let changeLang= document.getElementById('change-lang');
  let headTitle = document.getElementById('header-title');
  let headsubTitle = document.getElementById('header-subtitle');
@@ -16,28 +16,34 @@
  let translateEng = engLang[Math.floor(Math.random() * engLang.length)];
  let somRandom = translateSom;
  let engRandom = translateSom;
-
+// Start change Languege
 selection.addEventListener('change',()=> {
                 if (selection.value == "somali"){
-                   changeLang.innerHTML = "badeal luqada";
-                   headTitle.innerHTML= "Barasho iyo Maadso";
-                   headsubTitle.innerHTML = "baro eryo cusub oo kamid ah luqad kale";
-                   questionLabel.innerHTML = "tarjun erygan";
-                   randomSom.value = somRandom;
-                   document.getElementById('answer-input').value =""
-                 //   userResult();
+                   document.getElementById("select_language").innerHTML="Dooro Luqada";
+                    document.getElementById("header-title").innerHTML ="Barasho iyo Maadso";
+                    document.getElementById("header-subtitle").innerHTML ="Baro Erayo Cusub oo luqad kale ah";
+                    document.getElementById("question-label").innerHTML="U Turjun Eraygan English:";
+                    document.getElementById("answer-label").innerHTML= "Qor Jawaabtaada:";
+                    document.getElementById("submit-answer").innerHTML = "hubi";
+                    document.getElementById("reset").innerHTML="Ku Cesho";
+                    randomSom.value = somRandom;
+                    document.getElementById('answer-input').value ="";
+                
 
                   
                
                }else if(selection.value == 'english'){
                  
 
-                   changeLang.innerHTML= "Choose your language";
-                   headsubTitle.innerHTML= "Learn and Play";
-                   headsubTitle.innerHTML = "Learn new words of another language";
-                   questionLabel.innerHTML = "Translate this word";
+                   document.getElementById("select_language").innerHTML ="Select Language";
+                   document.getElementById("header-title").innerHTML ="Learn & Play";
+                   document.getElementById("header-subtitle").innerHTML ="Learn new words of another language";
+                   document.getElementById("question-label").innerHTML ='Translate this Word to Somali';
+                   document.getElementById("answer-label").innerHTML = 'Enter Your Answer';
+                   document.getElementById("submit-answer").innerHTML = 'check';
+                   document.getElementById("reset").innerHTML = 'reset';
                    randomEng.value = engRandom;
-                   document.getElementById('answer-input').value =""
+                   document.getElementById('answer-input').value ="";
 
                      
                }
@@ -47,7 +53,7 @@ selection.addEventListener('change',()=> {
  
  
      
-
+// Start submit bottom Function  
      function userResult(){
          let selection = document.getElementById('choose-lang').value;
          if (selection == 'somali'){
