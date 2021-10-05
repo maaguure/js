@@ -19,7 +19,7 @@
 // Start change Languege
 selection.addEventListener('change',()=> {
                 if (selection.value == "somali"){
-                   document.getElementById("select_language").innerHTML="Dooro Luqada";
+                   document.getElementById("change-lang").innerHTML="Dooro Luqada";
                     document.getElementById("header-title").innerHTML ="Barasho iyo Maadso";
                     document.getElementById("header-subtitle").innerHTML ="Baro Erayo Cusub oo luqad kale ah";
                     document.getElementById("question-label").innerHTML="U Turjun Eraygan English:";
@@ -35,7 +35,7 @@ selection.addEventListener('change',()=> {
                }else if(selection.value == 'english'){
                  
 
-                   document.getElementById("select_language").innerHTML ="Select Language";
+                   document.getElementById("change-lang").innerHTML ="Select Language";
                    document.getElementById("header-title").innerHTML ="Learn & Play";
                    document.getElementById("header-subtitle").innerHTML ="Learn new words of another language";
                    document.getElementById("question-label").innerHTML ='Translate this Word to Somali';
