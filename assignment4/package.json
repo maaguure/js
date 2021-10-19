@@ -1,0 +1,23 @@
+{
+  "name": "assignment4",
+  "version": "1.0.0",
+  "description": "assignment 4 nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "assignment",
+    "four"
+  ],
+  "author": "Mohamed Ahmed Ali",
+  "license": "ISC",
+  "dependencies": {
+    
+    "lodash": "^4.17.0",
+    "pino": "^7.0.2"
+  },
+  "devDependencies": {
+    "standard": "^16.0.4"
+  }
+}
